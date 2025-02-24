@@ -14,6 +14,7 @@ return {
                 "vimdoc",
                 "typescript",
                 "go",
+                "zig",
             },
             highlight = { enable = true },
             indent = { enable = true },
