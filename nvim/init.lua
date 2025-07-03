@@ -1,1 +1,1 @@
-require("xoanaraujo")
+require("default")

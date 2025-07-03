@@ -1,5 +1,4 @@
 return {
-  -- "iagorrr/noctishc.nvim",
   "ellisonleao/gruvbox.nvim",
   config = function()
     -- Default options:

@@ -12,9 +12,8 @@ return {
 				ensure_installed = {
 					"lua_ls",
 					"clangd",
-					"ts_ls",
-					"gopls",
 					"zls",
+          "gopls",
 				},
 			})
 		end,
@@ -29,8 +28,11 @@ return {
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
 			lspconfig.clangd.setup({ capabilities = capabilities })
-			lspconfig.ts_ls.setup({ capabilities = capabilities })
+			lspconfig.zls.setup({ capabilities = capabilities })
 			lspconfig.gopls.setup({ capabilities = capabilities })
+			lspconfig.cmake_language_server.setup({capabilities = capabilities})
+			lspconfig.cmakelang.setup({capabilities = capabilities})
+			lspconfig.cmakelint.setup({capabilities = capabilities})
 
 			local function goto_location_in_new_tab(_, result, ctx, config)
 				if result == nil or vim.tbl_isempty(result) then

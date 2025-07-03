@@ -30,4 +30,3 @@ return {
     vim.cmd("colorscheme gruvbox") -- Set the colorscheme
   end,
 }
-
